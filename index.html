@@ -70,7 +70,7 @@
 
             <div class="music-holder">
                 <div class="music-holder">
-                    <audio controls autoplay>
+                    <audio controls autoplay id="audio" muted="true">
                         <source src="./music_background.mp3" type="audio/mpeg">
                         Trình duyệt của bạn không hỗ trợ phát âm thanh.
                     </audio>
@@ -78,7 +78,6 @@
             </div>
         </div>
         <!-- end music box -->
-
 
         <!-- Start header -->
         <header id="myHeader" class="site-header header-style-1">
@@ -677,6 +676,16 @@
 
     <!-- Custom script for this template -->
     <script src="js/script.js"></script>
+    <script>
+        function PlayMusic() {
+        var play=document.getElementById("audio");
+        play.play();
+        }
 
+        document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(PlayMusic, 3000);
+        });
+
+    </script>
 
 </body></html>
