@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Page Title -->
-    <title> Lovly Wedding - Responsive Wedding Template </title>
+    <title> Thiệp mừng cưới </title>
 
     <!-- Favicon and Touch Icons -->
     <link href="images/favicon.png" rel="shortcut icon" type="image/png">
@@ -69,7 +69,12 @@
             </button>
 
             <div class="music-holder">
-                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/326494474&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false"></iframe>
+                <div class="music-holder">
+                    <audio controls autoplay>
+                        <source src="./music_background.mp3" type="audio/mpeg">
+                        Trình duyệt của bạn không hỗ trợ phát âm thanh.
+                    </audio>
+                </div>                
             </div>
         </div>
         <!-- end music box -->
@@ -148,17 +153,16 @@
                 </div>
             </div>
         </section>
-        <!-- end of hero slider -->
-
+        <!-- end of hero slider -->        
 
         <!-- start wedding-couple-section -->
         <section class="wedding-couple-section section-padding" id="couple">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <div class="gb groom">
+                        <div class="gb groom row">
                             <div class="img-holder wow fadeInLeftSlow">
-                                <img src="./Image_Wedding/intro_1.jpg" alt="">
+                                <img src="./intro_1_square.jpg" alt="">
                             </div>
                             <div class="details">
                                 <div class="details-inner">
@@ -174,11 +178,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="gb bride">
-                            <div class="details">
+                        <div class="gb bride row">
+                            <div class="details order-md-1 order-2">
                                 <div class="details-inner">
                                     <h3>Cô dâu</h3>
-                                    <p>Là một người hay cười nhưng sống nội tâm và hay khóc thầm. Sống tình cảm và yêu thương gia đình. Mình không thích đọc sách nhưng thích mua sắm, thích đi du lịch. Và cũng cực thích anh Nam nữa :3</p>
+                                    <p>Là một người hay cười nhưng sống nội tâm và hay khóc thầm. Sống tình cảm và yêu thương gia đình. Mình không thích đọc sách nhưng thích mua sắm, thích đi du lịch. </p>
                                     <span class="signature">Thu Hiền</span>
                                     <ul class="social-links">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -188,8 +192,8 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="img-holder wow fadeInRightSlow">
-                                <img src="./Image_Wedding/intro_2.jpg" alt="">
+                            <div class="img-holder wow fadeInRightSlow order-md-2 order-1">
+                                <img src="./intro3.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -238,7 +242,7 @@
                                     <div class="story-text right-align-text">
                                         <h3>Lần đầu gặp gỡ</h3>
                                         <span class="date">12 Tháng 1, 2023</span>
-                                        <p>Một cảm giác yên bình tuyệt vời đã chiếm trọn tâm hồn tôi, giống như những buổi sáng mùa xuân ngọt ngào mà tôi tận hưởng bằng cả trái tim. Tôi chỉ có một mình, nhưng lại cảm nhận được vẻ đẹp của sự tồn tại ở nơi này, nơi dường như được tạo ra để dành cho niềm hạnh phúc của những tâm hồn như tôi. Tôi cảm thấy vô cùng hạnh phúc, người bạn thân yêu của tôi ơi,</p>
+                                        <p>Chúng mình đã từng là bạn từ hồi mẫu giáo. Đã từng nói với nhau" Ê ! Tới năm 25 tuổi mà mày chưa lấy vợ, tao chưa lấy chồng, mày lấy tao nhé" . Và chúng mình cũng chưa từng nghĩ sẽ có ngày yêu nhau. Vậy mà giờ đây chúng mình đã sắp ở một " Cương vị mới " ^^</p>
                                     </div>                                    
                                 </div>
                                 <div class="col col-lg-6">
@@ -252,7 +256,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col col-lg-6">
+                                <div class="col col-lg-6 d-none d-md-block">
                                     <div class="img-holder right-align-text story-slider">
                                         <img src="./Image_Wedding/xam_2.jpg" alt="" class="img img-fluid">
                                         <img src="./Image_Wedding/red_2.jpg" alt="" class="img img-fluid">
@@ -260,7 +264,7 @@
                                         <img src="./Image_Wedding/vay_4.jpg" alt="" class="img img-fluid">
                                     </div>
                                 </div>
-                                <div class="col col-lg-6 text-holder">
+                                <div class="col col-lg-6 text-holder d-none d-md-block">
                                     <span class="heart">
                                         <i class="fa fa-heart"></i>
                                     </span>
@@ -269,6 +273,25 @@
                                         <span class="date">14 Tháng 2, 2023</span>
                                         <p>Đó là một ngày đặc biệt, khi mọi thứ xung quanh dường như trở nên tươi sáng hơn. Ánh mắt, nụ cười, và những câu chuyện đầu tiên tạo nên một khoảnh khắc khó quên. Tôi cảm thấy trái tim mình rung động, như thể tìm được mảnh ghép hoàn hảo mà bấy lâu nay vẫn luôn chờ đợi. Ngày hôm đó, tôi nhận ra rằng mọi thứ bắt đầu thay đổi theo một cách diệu kỳ.</p>
 
+                                    </div>
+                                </div>
+                                <div class="col col-lg-6 text-holder d-block d-md-none">
+                                    <span class="heart">
+                                        <i class="fa fa-heart"></i>
+                                    </span>
+                                    <div class="story-text">
+                                        <h3>Buổi hẹn hò đầu tiên</h3>
+                                        <span class="date">14 Tháng 2, 2023</span>
+                                        <p>Đó là một ngày đặc biệt, khi mọi thứ xung quanh dường như trở nên tươi sáng hơn. Ánh mắt, nụ cười, và những câu chuyện đầu tiên tạo nên một khoảnh khắc khó quên. Tôi cảm thấy trái tim mình rung động, như thể tìm được mảnh ghép hoàn hảo mà bấy lâu nay vẫn luôn chờ đợi. Ngày hôm đó, tôi nhận ra rằng mọi thứ bắt đầu thay đổi theo một cách diệu kỳ.</p>
+
+                                    </div>
+                                </div>
+                                <div class="col col-lg-6 d-block d-md-none">
+                                    <div class="img-holder right-align-text story-slider">
+                                        <img src="./Image_Wedding/xam_2.jpg" alt="" class="img img-fluid">
+                                        <img src="./Image_Wedding/red_2.jpg" alt="" class="img img-fluid">
+                                        <img src="./Image_Wedding/vay_3.jpg" alt="" class="img img-fluid">
+                                        <img src="./Image_Wedding/vay_4.jpg" alt="" class="img img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +317,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col col-lg-6">
+                                <div class="col col-lg-6 d-none d-md-block">
                                     <div class="img-holder right-align-text story-slider">
                                         <img src="./Image_Wedding/xam_4.jpg" alt="" class="img img-fluid">
                                         <img src="./Image_Wedding/red_4.jpg" alt="" class="img img-fluid">
@@ -302,15 +325,33 @@
                                         <img src="./Image_Wedding/vay_6.jpg" alt="" class="img img-fluid">
                                     </div>
                                 </div>
-                                <div class="col col-lg-6 text-holder">
+                                <div class="col col-lg-6 text-holder d-none d-md-block">
                                     <span class="heart">
                                         <i class="fa fa-heart"></i>
                                     </span>
                                     <div class="story-text">
                                         <h3>Lễ đính hôn</h3>
                                         <span class="date">14 Tháng 7, 2023</span>
-                                        <p>Đó là ngày chúng tôi chính thức gắn kết cuộc đời mình bằng một lời hứa thiêng liêng. Những nụ cười, những ánh mắt rạng ngời hạnh phúc của gia đình và bạn bè khiến mọi thứ trở nên thật ý nghĩa. Chiếc nhẫn trên tay không chỉ là biểu tượng của tình yêu, mà còn là lời cam kết sẽ cùng nhau vượt qua mọi thử thách trong cuộc sống. Tôi cảm thấy trái tim mình tràn ngập sự biết ơn và niềm vui khó tả.</p>
+                                        <p>Quãng thời gian vừa qua không phải là quá dài, nhưng cũng không quá ngắn, đủ để chúng mình nhận ra nhiều điều. Cuối cùng ngày vui nhất của chúng mình cũng tới rồi. Cảm ơn vì chúng ta đã luôn là một phần trong cuộc sống của nhau. Em và anh không chỉ là người yêu mà còn là tri kỷ, là bạn đồng hành. Kể từ Ngày hôm nay, em là Vợ, anh là Chồng và chúng ta là Một gia đình hạnh phúc.</p>
 
+                                    </div>
+                                </div>
+                                <div class="col col-lg-6 text-holder d-block d-md-none">
+                                    <span class="heart">
+                                        <i class="fa fa-heart"></i>
+                                    </span>
+                                    <div class="story-text">
+                                        <h3>Lễ đính hôn</h3>
+                                        <span class="date">14 Tháng 7, 2023</span>
+                                        <p>Quãng thời gian vừa qua không phải là quá dài, nhưng cũng không quá ngắn, đủ để chúng mình nhận ra nhiều điều. Cuối cùng ngày vui nhất của chúng mình cũng tới rồi. Cảm ơn vì chúng ta đã luôn là một phần trong cuộc sống của nhau. Em và anh không chỉ là người yêu mà còn là tri kỷ, là bạn đồng hành. Kể từ Ngày hôm nay, em là Vợ, anh là Chồng và chúng ta là Một gia đình hạnh phúc.</p>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-6 d-block d-md-none">
+                                    <div class="img-holder right-align-text story-slider">
+                                        <img src="./Image_Wedding/xam_4.jpg" alt="" class="img img-fluid">
+                                        <img src="./Image_Wedding/red_4.jpg" alt="" class="img img-fluid">
+                                        <img src="./Image_Wedding/vay_5.jpg" alt="" class="img img-fluid">
+                                        <img src="./Image_Wedding/vay_6.jpg" alt="" class="img img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -366,8 +407,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="event">
-                            <div class="details ps-0 pe-4">
+                        <div class="d-md-flex event d-grid justify-content-center">
+                            <div class="details order-md-1 order-2 ps-md-0 pe-md-4">
                                 <h3>Nhà Gái</h3>
                                 <ul>
                                     <li><i class="fa fa-map-marker"></i> Mê Linh, Hà Nội</li>
@@ -378,7 +419,7 @@
                                     Xem địa chỉ <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>
-                            <div class="img-holder">
+                            <div class="img-holder order-md-2 order-1">
                                 <img src="./Image_Wedding/nha_gai.jpg" alt="" class="img img-fluid">
                             </div>
                         </div>
@@ -406,7 +447,98 @@
                     </div>
                 </div> <!-- end section-title -->
 
-                <div class="row">
+                <div class="row pb-3 gx-3 gallery-container gallery-fancybox d-md-none">
+                    <div class="col-6">
+                        <div class="img-holder wow fadeInLeftSlow pb-3">
+                            <a href="./Image_Wedding/red_1.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/red_1.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInLeftSlow pb-3">
+                            <a href="./Image_Wedding/red_2.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/red_2.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInLeftSlow pb-3">
+                            <a href="./Image_Wedding/xam_1.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/xam_1.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInLeftSlow pb-3">
+                            <a href="./Image_Wedding/xam_4.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/xam_4.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInLeftSlow pb-3">
+                            <a href="./Image_Wedding/vay_1.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/vay_1.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInLeftSlow pb-3">
+                            <a href="./Image_Wedding/vay_2.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/vay_2.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInLeftSlow pb-3">
+                            <a href="./Image_Wedding/vay_5.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/vay_5.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div><div class="img-holder wow fadeInLeftSlow pb-3">
+                            <a href="./Image_Wedding/vay_6.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/vay_6.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="img-holder wow fadeInRightSlow pb-3">
+                            <a href="./Image_Wedding/banne1.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/banne1.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInRightSlow pb-3">
+                            <a href="./Image_Wedding/red_3.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/red_3.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInRightSlow pb-3">
+                            <a href="./Image_Wedding/xam_2.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/xam_2.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInRightSlow pb-3">
+                            <a href="./Image_Wedding/xam_3.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/xam_3.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInRightSlow pb-3">
+                            <a href="./Image_Wedding/vay_3.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/vay_3.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInRightSlow pb-3">
+                            <a href="./Image_Wedding/vay_4.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/vay_4.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInRightSlow pb-3">
+                            <a href="./Image_Wedding/vay_7.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/vay_7.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInRightSlow pb-3">
+                            <a href="./Image_Wedding/vay_8.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./Image_Wedding/vay_8.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                        <div class="img-holder wow fadeInRightSlow pb-3">
+                            <a href="./Image_Wedding/vay_8.jpg" class="fancybox" data-fancybox-group="gall-1">
+                                <img src="./vay.jpg" alt="" class="img img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-none d-md-block">
                     <div class="col col-xs-12 sortable-gallery">
                         <!-- <div class="gallery-filters">
                             <ul>
@@ -416,7 +548,7 @@
                                 <li><a data-filter=".party" href="#">Party</a></li>
                             </ul>
                         </div> -->
-
+                        
                         <div class="gallery-container gallery-fancybox masonry-gallery">
                             <div class="grid wedding img-holder wow fadeInLeftSlow">
                                 <a href="./Image_Wedding/vay_1.jpg" class="fancybox" data-fancybox-group="gall-1">
@@ -500,15 +632,15 @@
                 <div class="row content text-center">
                     <div class="col col-lg-6">
                         <h3>Mừng cưới đến chú rể</h3>
-                        <p>Ngân hàng: ...............</p>
-                        <p>Tên chú rể: ..............</p>
-                        <p>STK: .....................</p>
+                        <p>Ngân hàng: Vietinbank</p>
+                        <p>Tên chú rể: DO THANH HAI</p>
+                        <p>STK: 105868525233</p>
                     </div>
                     <div class="col col-lg-6">
                         <h3>Mừng cưới đến chú rể</h3>
-                        <p>Ngân hàng: ...............</p>
-                        <p>Tên chú rể: ..............</p>
-                        <p>STK: .....................</p>
+                        <p>Ngân hàng: Vietinbank</p>
+                        <p>Tên chú rể:  VU THI HIEN</p>
+                        <p>STK: 100878816814</p>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
@@ -523,7 +655,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <h2>Forever And Always Our Love</h2>
-                        <span>- Mick (The groom)</span>
+                        <span>Thanh Hải &amp; Thu Hiền</span>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
